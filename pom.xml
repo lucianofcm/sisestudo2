@@ -136,6 +136,7 @@
           <jvmFlags>
             <jvmFlag>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=50</jvmFlag>
           </jvmFlags>
+          <port>9797</port>
         </configuration>
       </plugin>
     </plugins>

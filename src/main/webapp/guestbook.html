@@ -38,3 +38,30 @@
     at {{ greeting.date }} by {{ greeting.author }}
   </li>
 </ul>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Cadastrar Matérias</h3>
+  </div>
+  <div class="panel-body" ng-controller="MateriasCtrl">
+   <div class="input-group"  style="padding: 5px">
+  <span  class="input-group-addon" id="basic-addon1">Nome</span>
+  <input ng-model="nome" type="text" class="form-control" placeholder="Nome Matéria" aria-describedby="basic-addon1">
+</div>
+
+  
+   <div class="input-group" style="padding: 5px">
+  <span class="input-group-addon" id="basic-addon1">Descrição</span>
+  
+  <textarea ng-model="descricao" type="text" class="form-control" placeholder="Descrição Matéria" aria-describedby="basic-addon1"></textarea>
+
+</div>
+	<div class="btn-group" style="margin-left: 5px">
+		<button ng-click="sayHello()" type="button" class="btn btn-primary btn-sm">Enviar</button>
+	</div>
+
+	<div class="btn-group" style="margin-left: 5px">
+		<button type="button" class="btn btn-primary btn-sm">Limpar</button>
+	</div>
+  </div>
+</div>
